@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "$FORNIX_FOLDER/gem_tools"
-gem build gem.gemspec 
+cd "$FORNIX_FOLDER"
+gem build gem.gemspec

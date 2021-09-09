@@ -52,7 +52,7 @@ class Version
     
     def <=>(other_version)
         if not other_version.is_a?(Version)
-            puts "When doing version comparision, both sides must be a version object"
+            # puts "When doing version comparision, both sides must be a version object"
             return nil
         end
         if other_version.to_s == self.to_s
@@ -111,7 +111,7 @@ class Version
     end
 end
 
-version_file = "#{__dir__}/version.txt"
+version_file = "#{ENV["FORNIX_FOLDER"]||"."}/gem_version.txt"
 if not File.exist? version_file
     IO.write(version_file, "0.0.0")
 end
