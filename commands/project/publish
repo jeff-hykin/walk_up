@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cd "$FORNIX_FOLDER"
+ruby "$FORNIX_FOLDER/gem_tools/version_bump"
+# build with that version
+"$FORNIX_COMMANDS_FOLDER/project/build"
+# publish the latest
+gem push walk_up-"$(cat "$FORNIX_FOLDER/gem_tools/version.txt")".gem
