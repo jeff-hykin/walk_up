@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require "pathname"
 
-def walk_up(file_to_find, start_path=nil)
+def walk_up_until(file_to_find, start_path=nil)
     here = start_path || Dir.pwd
     # if absolute
     if not Pathname.new(here).absolute?
@@ -10,7 +10,7 @@ def walk_up(file_to_find, start_path=nil)
     loop do
         check_path = File.join(here, file_to_find)
         if File.exist?(check_path)
-            return here
+            return check_path
         end
         # reached the top
         if here == File.dirname(here)
