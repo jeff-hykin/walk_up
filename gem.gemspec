@@ -17,6 +17,13 @@ Gem::Specification.new do |spec|
     spec.homepage = 'https://github.com/jeff-hykin/walk_up.git'
     spec.license = 'MIT'
     spec.description       = <<-desc
+        A simple function for walking up a file directory until a certain file is found.
+
+        ```ruby
+        require "walk_up"
+
+        require_relative walk_up_until("globals.rb") # <- will keep looking in parent directories for a "globals.rb" file
+        ```
     desc
     spec.files = Dir["{lib}/**/*", "LICENSE", "*.md"]
     
