@@ -2,16 +2,6 @@
 
 A simple function for walking up a file directory until a certain file is found.
 
-JavaScript version:
-
-`npm install walk-up`
-
-```js
-const { walkUpUntil } = require("@!!!!!/walk_up")
-
-let filepath = walkUpUntil("package.json")
-```
-
 Python version:
 
 `pip install walk-up`
@@ -20,6 +10,16 @@ Python version:
 from walk_up import walk_up_until
 
 filepath = walk_up_until("requirements.txt")
+```
+
+JavaScript version:
+
+`npm install "@!!!!!/walk-up"`
+
+```js
+const { walkUpUntil } = require("@!!!!!/walk-up")
+
+let filepath = walkUpUntil("package.json")
 ```
 
 Ruby version:
