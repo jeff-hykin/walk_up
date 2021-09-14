@@ -9,7 +9,7 @@ const walkUpUntil = (fileToFind, startPath=null)=> {
     }
     while (1) {
         let checkPath = path.join(here, fileToFind)
-        if (fs.exists(checkPath)) {
+        if (fs.existsSync(checkPath)) {
             return checkPath
         }
         // reached the top
