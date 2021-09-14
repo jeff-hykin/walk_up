@@ -1,7 +1,8 @@
 # 
 # Custom
 # 
-
+python/build
+python/dist
 
 # 
 # standard
