@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd "$PROJECTR_FOLDER/main"
+cd "$PROJECTR_FOLDER/python"
 rm -rf ./dist
 python setup.py sdist bdist_wheel
 if [ -d "./dist" ]

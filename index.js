@@ -21,3 +21,5 @@ const walkUpUntil = (fileToFind, startPath=null)=> {
         }
     }
 }
+
+module.exports = { walkUpUntil }

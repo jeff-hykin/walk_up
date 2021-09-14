@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-pip install -e main
+
+cd "$FORNIX_FOLDER"
+pip install -e python
