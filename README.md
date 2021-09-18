@@ -14,7 +14,7 @@ filepath = walk_up_until("requirements.txt")
 
 JavaScript version:
 
-`npm install "@!!!!!/walk-up"`
+`npm install '@!!!!!/walk-up'`
 
 ```js
 const { walkUpUntil } = require("@!!!!!/walk-up")
